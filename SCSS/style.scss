@@ -1,0 +1,77 @@
+$bg-color: blue;
+$txt-color: white;
+$fs:30px;
+
+//Gom nhóm theo block
+#myDiv{
+    .title{
+        background-color: $bg-color;
+        color: $txt-color;
+        font: {
+            size: $fs;
+            weight: bold;
+            style: italic;
+        }
+    }
+    
+    .demo{
+        background-color: $bg-color;
+        color: $txt-color;
+    }
+}
+
+@mixin block-content($bg){
+    width: 50%;
+    background-color: $bg;    
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.content {
+    display: flex;
+    .left{
+        @include block-content(green);
+    }
+
+    .right{
+        @include block-content(plum);
+    }
+}
+
+.btn1{
+    background-color: aquamarine;
+    border: none;
+    padding: 20px 50px;
+    border-radius: 5px;
+    margin-top: 20px    
+}
+
+.btn2{
+    @extend .btn1;  
+    color: red  ;
+}
+
+$block-color: black;
+.container{
+    @if $block-color == green{
+        background-color: green;
+    }@else if $block-color == red{
+        background-color: red;
+    }@else{
+        background-color: lightpink;
+    }
+}
+
+@for $size from 1 through 4 {
+        .heading-#{$size}{
+            font-size: 2rem*$size;
+        }
+}
+
+$social: facebook youtube google;
+@each $item in $social {
+    .#{$item}{
+        background-image: url("./img/#{$item}.png");
+    }
+}

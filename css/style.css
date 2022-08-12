@@ -1,0 +1,73 @@
+#myDiv .title {
+  background-color: blue;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}
+#myDiv .demo {
+  background-color: blue;
+  color: white;
+}
+
+.content {
+  display: flex;
+}
+.content .left {
+  width: 50%;
+  background-color: green;
+  text-align: center;
+  color: white;
+  padding: 100px 0;
+}
+.content .right {
+  width: 50%;
+  background-color: plum;
+  text-align: center;
+  color: white;
+  padding: 100px 0;
+}
+
+.btn1, .btn2 {
+  background-color: aquamarine;
+  border: none;
+  padding: 20px 50px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn2 {
+  color: red;
+}
+
+.container {
+  background-color: lightpink;
+}
+
+.heading-1 {
+  font-size: 2rem;
+}
+
+.heading-2 {
+  font-size: 4rem;
+}
+
+.heading-3 {
+  font-size: 6rem;
+}
+
+.heading-4 {
+  font-size: 8rem;
+}
+
+.facebook {
+  background-image: url("./img/facebook.png");
+}
+
+.youtube {
+  background-image: url("./img/youtube.png");
+}
+
+.google {
+  background-image: url("./img/google.png");
+}/*# sourceMappingURL=style.css.map */
